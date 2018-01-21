@@ -1,14 +1,28 @@
 <html>
+    <style type="text/css">
+        h1, p {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #playerContainer {
+            text-align: center;
+        }
+
+        #videoDebug {
+            visibility: hidden;
+        }
+    </style>
     <body>
-        <h1>Stream-m JavaScript Player Demo</h1>
-        <p>This page will play the stream called 'first' using the MediaSource API.</p>
+        <h1>Dance Hack!</h1>
+        <p>Move faster to increase the music's volume!</p>
         <div id="playerContainer"></div>
         
         <script src="player.js"></script>
         <script>
             var playerContainer = document.getElementById("playerContainer");
             var options = {
-                url: "/consume/first",
+                url: "http://ittakestwotodjango.net/consume/dancehack",
                 debug: true,
             };
             var player = new org.czentral.streamm.Player(playerContainer, options);
